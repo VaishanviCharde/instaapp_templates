@@ -1,0 +1,1 @@
+$(function(){$.exitIntent("enable"),$(document).bind("exitintent",function(){"undefined"!=typeof Storage&&("true"==sessionStorage.exit_popup||(sessionStorage.exit_popup="true",setTimeout(function(){"hide_exit_popup"==$.cookie("exit-popup")||$("#exit_popup").modal("show")},100)))}),$("#exit_popup a").bind("click",function(){return $("#exit_popup").hide(),!1})});
